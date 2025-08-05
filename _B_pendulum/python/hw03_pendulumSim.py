@@ -4,6 +4,11 @@ from signalGenerator import signalGenerator
 from pendulumAnimation import pendulumAnimation
 from dataPlotter import dataPlotter
 from pendulumDynamics import pendulumDynamics
+#
+# The following could also work if you want to generate your E-L 
+# equations using SymPy. But then you would need to be careful
+# about the file path to the generated eom file. 
+#from pendulumDynamicsSympy import pendulumDynamics
 
 # instantiate pendulum, controller, and reference classes
 pendulum = pendulumDynamics(alpha=0.0)

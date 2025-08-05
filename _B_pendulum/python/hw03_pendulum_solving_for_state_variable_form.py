@@ -2,7 +2,7 @@
 from hw02_pendulum_finding_KE import *
 
 #%%[markdown]
-# ## The code imported from above shows how we defined q, q_dot, and necessary system parameters. Then we used position, velocity, and angular velocity to calculate kinetic energy.
+# The code imported from above shows how we defined q, q_dot, and necessary system parameters. Then we used position, velocity, and angular velocity to calculate kinetic energy.
 
 #%%
 #defining potential energy 

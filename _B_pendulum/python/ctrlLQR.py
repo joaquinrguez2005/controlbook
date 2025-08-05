@@ -10,7 +10,7 @@ class ctrlLQR:
         # LQR Control Design with integrator and observer
         #--------------------------------------------------
         # tuning parameters
-        Q = np.diag([1.0, 1.0, 1.0, 1.0, 1.0])  # [z, theta, z_dot, theta_dot, e_z_int]
+        Q = np.diag([30.0, 100.0, 1.0, 1.0, 1000.0])  # [z, theta, z_dot, theta_dot, e_z_int]
         R = np.diag([1.0])  # [F]   
 
         # State Space Equations
