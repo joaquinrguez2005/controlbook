@@ -4,6 +4,7 @@ import numpy as np
 # Slider Starting Values:
 H_number = 4
 
+# km value for simulation is self-consistent and does not need to be identified directly.
 km = 0.367
 
 t_flip = 10         # Square wave Duration
