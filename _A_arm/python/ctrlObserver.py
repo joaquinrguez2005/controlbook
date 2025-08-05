@@ -42,11 +42,12 @@ class ctrlObserver:
             K1 = cnt.place(A1, B1, des_poles)
             self.K = K1[0][0:2]
             self.ki = K1[0][2]
+        
         # observer design
         wn_obs = 2.2 / tr_obs
         des_obsv_char_poly = [1, 2*zeta_obs*wn_obs, wn_obs**2]
         des_obsv_poles = np.roots(des_obsv_char_poly)
-        # Compute the gains if the system is controllable
+        # Compute the gains if the system is observable
         if np.linalg.matrix_rank(cnt.ctrb(self.A.T, self.C.T)) != 2:
             print("The system is not observerable")
         else:

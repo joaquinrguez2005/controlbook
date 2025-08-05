@@ -56,7 +56,7 @@ class ctrlDisturbanceObserver :
         des_obsv_char_poly = np.convolve([1, 2 * zeta_obs * wn_obs, wn_obs**2],
                                          [1, dist_obsv_pole])
         des_obsv_poles = np.roots(des_obsv_char_poly)
-        # Compute the gains if the system is controllable
+        # Compute the gains if the system is observable
         if np.linalg.matrix_rank(cnt.ctrb(A2.T, C2.T)) != 3:
             print("The system is not observerable")
         else:
